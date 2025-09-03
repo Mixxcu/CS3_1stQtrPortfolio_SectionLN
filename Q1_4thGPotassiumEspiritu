@@ -1,0 +1,52 @@
+process.stdin.on('data', input => {
+    let greeting = input.toString().trim();
+
+    const{get} =require()
+
+    console.log('Languages!')
+
+    //HELLO - ENGLISH
+    //MABUHAY - TAGALOG
+    //ZDRAVSTUJTE - RUSSIAN
+    //HOLA - SPANISH
+    //HALLO - GERMAN
+    //CIAO - ITALIAN
+
+    rli = require('readline').createInterface({
+        input:process.stdin,
+    })
+    rli.on('line', function(line) {
+        line !=="END"?inputs.push(line):
+        rli.close();
+    })
+
+    var inputs = []
+
+    rli.on('close', get_the_greeting)
+    for(let i=0; i<inputs.length; i++){
+        switch(inputs[i]){
+            case "HELLO":
+                console.log("ENGLISH");
+                break;
+            case "MABUHAY":
+                console.log(TAGALOG)
+                break;
+            case "ZDRAVSTUJTE":
+                console.log("RUSSIAN");
+                break;
+            case "HOLA":
+                console.log("SPANISH");
+                break;
+            case "HALLO":
+                console.log("GERMAN");
+                break;
+            case "CIAO":
+                console.log ("ITALIAN");
+                break;
+            default:
+                console.log("UNKNOWN");
+                break;
+        } 
+    }
+process.exit();
+});
